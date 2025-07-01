@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: black;
+  box-sizing: border-box;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.container {
+  padding: 20px;
+  height: 100vh;
+  background: linear-gradient(240deg, black, #f7b42c, red, #000000);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.missions-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.missions-table th,
+.missions-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.missions-table th {
+  background: #007BFF;
+  color: white;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button-group button {
+  padding: 10px 15px;
+  font-size: 14px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#addMissionBtn {
+  background-color: #28a745;
+  color: white;
+}
+
+#addMissionBtn:hover {
+  background-color: #218838;
+}
+
+#finishBtn {
+  background-color: #007BFF;
+  color: white;
+}
+
+#finishBtn:hover {
+  background-color: #0056b3;
+}
+
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
